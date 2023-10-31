@@ -8,6 +8,7 @@ Open more cards, find the same emojis. You win if you find all of them!
 
 # Live:
 
+https://anmakulaku.github.io/Memory-Game/
 
 # Tech used:
 <ul>
