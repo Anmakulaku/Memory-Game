@@ -4,7 +4,7 @@ Train your brain in Memory Game!
 
 ## Rules
 
-Open more cards, find the same emojis. You win if you find all of them!
+Open two cards, find the same emojis. You win if you find all of them!
 
 # Live:
 
