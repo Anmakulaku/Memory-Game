@@ -19,7 +19,7 @@ for (let i=0; i<emoticons.length; i++) {
         this.classList.add('boxOpen')
         const openCards = document.querySelectorAll('.boxOpen');
         setTimeout(() => {
-            if (openCards.length > 1) {
+            if (openCards.length <=2) {
                 if (openCards[0].innerHTML === openCards[1].innerHTML) {
                     openCards.forEach((item) => {
                         item.classList.add('boxMatched');
@@ -39,7 +39,7 @@ for (let i=0; i<emoticons.length; i++) {
                     });
                 }
             } 
-        }, 600);
+        }, 300);
     }
     gameContent.appendChild(box);
 };
