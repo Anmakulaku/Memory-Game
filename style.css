@@ -63,12 +63,12 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 3em;
-    transition: 0.3s;
+    transition: 0.2s;
     transform: rotateY(180deg);
     cursor: pointer;
 }
 
-.item .boxOpen{
+.item.boxOpen{
     transform: rotateY(0deg);
 }
 
@@ -79,7 +79,7 @@ body {
     background-color: var(--clr-primary);
     /* opacity: 0.5; */
     border-radius: 5px;
-    transition: 0.3s;
+    transition: 0.2s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
 }
@@ -109,7 +109,7 @@ body {
     border: 2px solid var(--clr-light);
 }
 
-.hidden{
+.modal.hidden{
     display: none;
 }
 

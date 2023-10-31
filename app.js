@@ -2,6 +2,14 @@ const emoticons = ['❤️', '😁', '😂', '🎃', '🤩', '🎵', '🎄', '�
 
 let shuffleEmoticons = [...emoticons].sort(() => (Math.random() - 0.5));
 
+const gameContent = document.querySelector('.game__content');
+const modal = document.querySelector('.modal');
+const closeModalButton = document.querySelector('.closeModal');
+
+closeModalButton.addEventListener('click', () => {
+    modal.classList.add('hidden');
+});
+
 for (let i=0; i<emoticons.length; i++) {
     let box = document.createElement('div');
     box.className = 'item';
@@ -22,13 +30,6 @@ for (let i=0; i<emoticons.length; i++) {
                         console.log('Usunięto klasę boxOpen');
                     });
                     if(document.querySelectorAll(".boxMatched").length === shuffleEmoticons.length) {
-                        const modal = document.querySelector('.modal');
-                        const closeModalButton = document.querySelector('.closeModal');
-
-                        closeModalButton.addEventListener('click', () => {
-                            modal.classList.add('hidden');
-                        });
-
                         modal.classList.remove('hidden');
                     } 
                 }  else {
@@ -40,5 +41,5 @@ for (let i=0; i<emoticons.length; i++) {
             } 
         }, 600);
     }
-    document.querySelector('.game__content').appendChild(box);
+    gameContent.appendChild(box);
 };
