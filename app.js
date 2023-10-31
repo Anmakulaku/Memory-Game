@@ -23,11 +23,11 @@ for (let i=0; i<emoticons.length; i++) {
                 if (openCards[0].innerHTML === openCards[1].innerHTML) {
                     openCards.forEach((item) => {
                         item.classList.add('boxMatched');
-                        console.log('Znaleziono parę!');
+                        // console.log('Znaleziono parę!');
                     });
                     openCards.forEach((item) => {
                         item.classList.remove('boxOpen');
-                        console.log('Usunięto klasę boxOpen');
+                        // console.log('Usunięto klasę boxOpen');
                     });
                     if(document.querySelectorAll(".boxMatched").length === shuffleEmoticons.length) {
                         modal.classList.remove('hidden');
@@ -35,7 +35,7 @@ for (let i=0; i<emoticons.length; i++) {
                 }  else {
                     openCards.forEach((item) => {
                         item.classList.remove('boxOpen');
-                        console.log('Nie wiadomo');
+                        // console.log('Nie wiadomo');
                     });
                 }
             } 
