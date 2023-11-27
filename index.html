@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="circle-container">
+        <div class="circle circle1"></div>
+        <div class="circle circle2">
+            <div class="circle circle2__in"></div>
+        </div>
+        <div class="circle circle3"></div>
+    </div>
     <div class="game__container">
         <h1 class="game__title">Memory Game</h1>
+        <h2 class="game__subtitle">Turns: 
+            <span id="turnsCounter">0</span>
+        </h2>
         <div class="game__content"></div>
         <button class="game__reset" onclick="window.location.reload()">PLAY AGAIN</button>
     </div>
